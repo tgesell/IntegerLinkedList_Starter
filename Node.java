@@ -1,30 +1,16 @@
 public class Node
 {
-    private int value;
-    private Node next;
+    //instance data
+    
+    //Constructor
     public Node (int value)
     {
-        this.value = value;
-        next = null;
+
     }
     
-    public int getValue()
-    {
-        return value;
-    }
+    //Two Accessor methods
+
     
-    public Node getNext()
-    {
-        return next;
-    }
-    
-    public void setValue(int value)
-    {
-        this.value = value;
-    }
-    
-    public void setNext(Node next)
-    {
-        this.next = next;
-    }
+    //Two Mutator methods
+
 }
