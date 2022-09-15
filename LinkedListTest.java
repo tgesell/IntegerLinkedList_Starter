@@ -1,8 +1,12 @@
+//This is only a partial test to get you started.
+//Make sure to test each of your methods
+//Make sure to test edge cases for each method
+
 public class LinkedListTest
 {
     public static void main(String[] args)
     {
-        LinkedList myList = new LinkedList();
+        IntegerLinkedList myList = new IntegerLinkedList();
         
         System.out.println("Display empty list: " + myList);
         System.out.println("isEmpty()?: " + myList.isEmpty());
