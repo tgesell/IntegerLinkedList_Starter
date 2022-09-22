@@ -13,6 +13,7 @@ public class Node
     public Node (Comparable value, Node next)
     {
         val = value;
+        this.next = next;
     }
     
     //Two Accessor methods
