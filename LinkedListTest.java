@@ -20,7 +20,7 @@ public class LinkedListTest
         System.out.println("Display list after clear(): " + myList);
         System.out.println("isEmpty()?: " + myList.isEmpty());
         
-        myList.add(5,0);
+        myList.add(0,5);
         System.out.println("Add 5 to position 0 of empty list: " + myList);
         System.out.println("isEmpty()?: " + myList.isEmpty());
       
@@ -31,13 +31,13 @@ public class LinkedListTest
         myList.add(11);
         System.out.println("Add 11 to end of list: " + myList);
         
-        myList.add(7,1);
+        myList.add(1,7);
         System.out.println("Add 7 to position 1 of list: " + myList);
         
-        myList.add(2,0);
+        myList.add(0,2);
         System.out.println("Add 2 to position 0 of list: " + myList);
        
-        myList.add(12,5);
+        myList.add(5,12);
         System.out.println("Add 12 to position 5 (the next unused -- \"last\" -- position of list: " + myList);
         
         myList.remove(0);
