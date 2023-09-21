@@ -8,12 +8,12 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
         head = null;
     }
 
-    public void add(int value)
+    public void add(Integer value)
     {
         add(size, value);
     }
 
-    public void add(int index, int value)
+    public void add(int index, Integer value)
     {
         Node n = new Node(value);
         if (index == 0) {
@@ -33,25 +33,10 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
         else
             throw new IndexOutOfBoundsException();
     }
-
-    public void set(int index, int value)
-    {
-        
-    }
     
     public void clear()
     {
         
-    }
-
-    public void remove(int index)
-    {
-
-    }
-
-    public int get(int index)
-    {
-        return -1;
     }
 
 
@@ -65,20 +50,6 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
         return true;
     }
 
-    public boolean contains(int val)
-    {
-        return false;
-    }
-
-    public int indexOf(int val)
-    {
-        return -1;
-    }
-
-    public boolean equals(IntegerList other)
-    {
-        return false;
-    }
     
     public String toString()
     {
