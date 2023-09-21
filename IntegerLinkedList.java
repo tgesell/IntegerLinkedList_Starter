@@ -6,6 +6,7 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
     public IntegerLinkedList()
     {
         head = null;
+        size = 0;
     }
 
     public void add(Integer value)
@@ -19,6 +20,7 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
         if (index == 0) {
             n.setNext(head);
             head = n;
+            size++;
         }
         else if (0 < index && index <= size)
         {
@@ -29,6 +31,7 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
             }
             n.setNext(current.getNext());
             current.setNext(n);
+            size++;
         }
         else
             throw new IndexOutOfBoundsException();
