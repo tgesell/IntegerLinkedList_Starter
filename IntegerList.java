@@ -1,27 +1,6 @@
-//Do not modify this interface
-
-public interface IntegerList {
-    public void add(int x);
-
-    public void add(int index, int x);
-
-    public void set(int index, int x);
-
-    public void clear();
-
-    public void remove(int index);
-
-    public int get(int index);
-
-    public int size();
-
-    public boolean isEmpty();
-
-    public boolean contains(int val);
-
-    public int indexOf(int val);
-
-    public boolean equals(IntegerList other);
-
-    public String toString();
+public interface IntegerList extends List<Integer> {
+    //no code needed, just a specific version of List that works with Integer values.
+    //this will be easier for us to implement, because we won't have to worry about Generics.
+    //You will implement the methods from List in IntegerArrayList, however, you can just replace every instance of E with Integer
+    // when implmenting them in your IntegerArrayList class.
 }
