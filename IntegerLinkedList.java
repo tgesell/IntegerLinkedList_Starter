@@ -34,7 +34,7 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
             size++;
         }
         else
-            throw new IndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException(index + "");
     }
     
     public void clear()
