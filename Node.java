@@ -2,22 +2,23 @@ public class Node<E extends Comparable>
 {
     //instance data
     private E val;
-    private Node next;
-    
+    private Node<E> next;
+
     //Constructor
     public Node (E value)
     {
         val = value;
+        next =  null;
     }
 
-    public Node (E value, Node next)
+    public Node (E value, Node<E> next)
     {
         val = value;
         this.next = next;
     }
-    
+
     //Two Accessor methods
-    public Node getNext()
+    public Node<E> getNext()
     {
         return next;
     }
@@ -26,9 +27,9 @@ public class Node<E extends Comparable>
     {
         return val;
     }
-    
+
     //Two Mutator methods
-    public void setNext(Node n)
+    public void setNext(Node<E> n)
     {
         this.next = n;
     }

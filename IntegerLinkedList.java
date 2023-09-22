@@ -1,6 +1,6 @@
 public class IntegerLinkedList implements IntegerList //do not remove implements List.
 {
-    private Node head;
+    private Node<Integer> head;
     private int size;
 
     public IntegerLinkedList()
@@ -16,7 +16,7 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
 
     public void add(int index, Integer value)
     {
-        Node n = new Node(value);
+        Node<Integer> n = new Node<>(value);
         if (index == 0) {
             n.setNext(head);
             head = n;
@@ -24,7 +24,7 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
         }
         else if (0 < index && index <= size)
         {
-            Node current = head;
+            Node<Integer> current = head;
             for (int i=0; i<index-1; i++)
             {
                 current = current.getNext();
@@ -36,7 +36,7 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
         else
             throw new IndexOutOfBoundsException(index + "");
     }
-    
+
     public void clear()
     {
         //add method body here
@@ -47,16 +47,16 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
     {
         return -1; //replace this
     }
-    
+
     public boolean isEmpty()
     {
         return true; //replace this
     }
 
-    
+
     public String toString()
     {
-       return ""; //replace this
+        return ""; //replace this
     }
 
     public boolean equals(List<Integer> otherList)
