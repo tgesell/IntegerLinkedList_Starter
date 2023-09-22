@@ -1,16 +1,16 @@
-public class Node
+public class Node<E extends Comparable>
 {
     //instance data
-    private Comparable val;
+    private E val;
     private Node next;
     
     //Constructor
-    public Node (Comparable value)
+    public Node (E value)
     {
         val = value;
     }
 
-    public Node (Comparable value, Node next)
+    public Node (E value, Node next)
     {
         val = value;
         this.next = next;
@@ -22,7 +22,7 @@ public class Node
         return next;
     }
 
-    public Comparable getValue()
+    public E getValue()
     {
         return val;
     }
@@ -33,7 +33,7 @@ public class Node
         this.next = n;
     }
 
-    public void setValue(Comparable value)
+    public void setValue(E value)
     {
         this.val = value;
     }

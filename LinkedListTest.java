@@ -39,6 +39,8 @@ public class LinkedListTest
        
         myList.add(5,12);
         System.out.println("Add 12 to position 5 (the next unused -- \"last\" -- position of list: " + myList);
+        System.out.println(myList);
+        System.out.println("contains(): " + myList.contains(2));
         
         myList.remove(0);
         System.out.println("Remove element 0 from the list: " + myList);

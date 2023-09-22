@@ -39,23 +39,30 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
     
     public void clear()
     {
-        
+        //add method body here
     }
 
 
     public int size()
     {
-        return -1;
+        return -1; //replace this
     }
     
     public boolean isEmpty()
     {
-        return true;
+        return true; //replace this
     }
 
     
     public String toString()
     {
-       return "";
+       return ""; //replace this
     }
+
+    public boolean equals(List<Integer> otherList)
+    {
+        return false; //replace this
+    }
+
+    //add the rest of the methods required by the List interface (the IntegerList interface is just an extension of the List interface)
 }
