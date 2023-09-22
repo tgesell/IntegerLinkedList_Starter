@@ -59,10 +59,15 @@ public class IntegerLinkedList implements IntegerList //do not remove implements
         return ""; //replace this
     }
 
-    public boolean equals(List<Integer> otherList)
+    public boolean equals(IntegerLinkedList otherList)
     {
         return false; //replace this
     }
 
+    public boolean equals(List<Integer> otherList)
+    {
+        //this method is complete.  It just calls the other equals method.
+        return this.equals((IntegerList)otherList);
+    }
     //add the rest of the methods required by the List interface (the IntegerList interface is just an extension of the List interface)
 }
